@@ -1,0 +1,38 @@
+name: Build & Publish docker
+
+on:
+  workflow_dispatch:
+    inputs:
+      pkg-version:
+        type: string
+        description: The version of the package
+  push:
+    branches: ["main"]
+    paths:
+      - Dockerfile
+      - .dockerignore
+      - pkg-info.json
+      - .github/workflows/docker.yml
+  pull_request:
+    paths:
+      - Dockerfile
+      - .dockerignore
+      - pkg-info.json
+      - .github/workflows/docker.yml
+
+jobs:
+  build:
+    uses: FirelightFlagboy/gh-actions-workflows-docker-services/.github/workflows/docker-build-publish.yml@bed32c0ee9187aa4ea15bb922d58f145d91a70e4
+    permissions:
+      contents: read
+      # This is used to complete the identity challenge
+      # with sigstore/fulcio when running outside of PRs.
+      id-token: write
+    with:
+      docker-username: firelightflagbot
+      pkg-version: ${{ inputs.pkg-version }}
+      platforms: linux/amd64
+      docker-repository: firelightflagbot/bazarr
+      registry: docker.io
+    secrets:
+      docker-password: ${{ secrets.DOCKER_HUB_PAT }}

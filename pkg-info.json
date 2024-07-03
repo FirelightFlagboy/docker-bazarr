@@ -1,0 +1,19 @@
+{
+  "name": "Bazarr",
+  "latest_version": "v1.4.3",
+  "versions": {
+    "v1.4.3": {
+      "amd64": {
+        "filename": "bazarr.zip",
+        "download_url": "https://github.com/morpheus65535/bazarr/releases/download/v1.4.3/bazarr.zip",
+        "digest": "sha512:d1c836963fda222bd1a2fd481a51fb217ee7f2dc7bb9d3e82a8722fb310a90488102af86c3e20fed6eaf4aba92379712b585f5e5e4a4a1b7c91790b5f5cc3c17"
+      }
+    }
+  },
+  "mode": "github-release",
+  "repository_path": "morpheus65535/bazarr",
+  "arch_asset_patterns": {
+    "amd64": "bazarr.zip",
+    "arm64": "bazarr.zip"
+  }
+}
