@@ -1,4 +1,4 @@
-set -eux
+set -eu
 
 API_KEY="$(yq -r .auth.apikey "$CONFIG_DIR/config/config.yaml")"
 
