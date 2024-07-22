@@ -1,4 +1,5 @@
 {
+  "$schema": "https://raw.githubusercontent.com/FirelightFlagboy/gh-actions-workflows-docker-services/v2.1.0/pkg-info.schema.json",
   "name": "Bazarr",
   "latest_version": "v1.4.3",
   "versions": {
@@ -15,5 +16,7 @@
   "arch_asset_patterns": {
     "amd64": "bazarr.zip",
     "arm64": "bazarr.zip"
-  }
+  },
+  "allow_prerelease": true,
+  "strip_v_prefix": true
 }
