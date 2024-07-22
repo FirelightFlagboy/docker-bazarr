@@ -22,7 +22,7 @@ on:
 
 jobs:
   build:
-    uses: FirelightFlagboy/gh-actions-workflows-docker-services/.github/workflows/docker-build-publish.yml@bed32c0ee9187aa4ea15bb922d58f145d91a70e4
+    uses: FirelightFlagboy/gh-actions-workflows-docker-services/.github/workflows/docker-build-publish.yml@40e0da522f9997f3a57903cb0285446434d8fe9e
     permissions:
       contents: read
       # This is used to complete the identity challenge
