@@ -1,7 +1,7 @@
 {
   "$schema": "https://raw.githubusercontent.com/FirelightFlagboy/gh-actions-workflows-docker-services/v2.1.0/pkg-info.schema.json",
   "name": "Bazarr",
-  "latest_version": "1.4.4-beta.27",
+  "latest_version": "1.4.4-beta.31",
   "versions": {
     "1.4.4-beta.24": {
       "amd64": {
@@ -25,6 +25,18 @@
         "filename": "bazarr.zip",
         "download_url": "https://github.com/morpheus65535/bazarr/releases/download/v1.4.4-beta.27/bazarr.zip",
         "digest": "sha512:645385df0526405b250eaa171ff80cd0a29febfa25fda0e655e1843ec2f0d76b1fedadd4dd1f17a3b325f7f4297b2822935961efca44cf136d34037199731729"
+      }
+    },
+    "1.4.4-beta.31": {
+      "amd64": {
+        "filename": "bazarr.zip",
+        "download_url": "https://github.com/morpheus65535/bazarr/releases/download/v1.4.4-beta.31/bazarr.zip",
+        "digest": "sha512:576725ee6a084516c508afafbecfa9aa2ca397a7eabc09a4e7b0d68dfb1010b15e62c63776c3355364f03c4f0c3b04e2e607af84b48ae779da6504429b471185"
+      },
+      "arm64": {
+        "filename": "bazarr.zip",
+        "download_url": "https://github.com/morpheus65535/bazarr/releases/download/v1.4.4-beta.31/bazarr.zip",
+        "digest": "sha512:576725ee6a084516c508afafbecfa9aa2ca397a7eabc09a4e7b0d68dfb1010b15e62c63776c3355364f03c4f0c3b04e2e607af84b48ae779da6504429b471185"
       }
     },
     "v1.4.3": {
