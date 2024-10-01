@@ -66,5 +66,5 @@
     "arm64": "bazarr.zip"
   },
   "strip_v_prefix": true,
-  "allow_prerelease": true
+  "allow_prerelease": false
 }
