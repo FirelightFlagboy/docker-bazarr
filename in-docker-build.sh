@@ -37,6 +37,5 @@ cd /opt/bazarr
 python3 -m venv .venv
 source .venv/bin/activate
 
-tee requirements.txt
-sed -i 's/lxml>=4.3.0/lxml>=5.0.0/' requirements.txt # version 4.9.4 cannot be build with recent python version
+sed -i 's/lxml>=4.3.0.*$/lxml~=5.0.0/' requirements.txt # version 4.9.4 cannot be build with recent python version
 python3 -m pip install -r requirements.txt
