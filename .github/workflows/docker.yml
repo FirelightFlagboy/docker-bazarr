@@ -7,18 +7,20 @@ on:
         type: string
         description: The version of the package
   push:
-    branches: ["main"]
+    branches: [main]
     paths:
       - Dockerfile
       - .dockerignore
       - pkg-info.json
       - .github/workflows/docker.yml
+      - in-docker-build.sh
   pull_request:
     paths:
       - Dockerfile
       - .dockerignore
       - pkg-info.json
       - .github/workflows/docker.yml
+      - in-docker-build.sh
 
 jobs:
   build:
